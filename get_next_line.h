@@ -23,5 +23,9 @@ void	ft_bzero(void *s, size_t n);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strchr(const char *s, int c);
 size_t	ft_strlen(const char *str);
+char	*ft_check(char *saved, char *buf);
+char	*ft_reading(int fd, char *saved);
+char	*ft_get_line(char *saved);
+char	*ft_get_leftovers(char *saved);
 
 #endif
