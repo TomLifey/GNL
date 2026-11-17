@@ -16,7 +16,6 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stddef.h>
-# include <limits.h>
 
 # ifndef OPEN_MAX
 #  define OPEN_MAX 1024

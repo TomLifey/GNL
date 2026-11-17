@@ -103,10 +103,10 @@ char	*get_next_line(int fd)
 	static char	*saved;
 	char		*line;
 
-	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, NULL, 0) < 0)
+	if (fd < 0 || BUFFER_SIZE <= 0)
 	{
-		saved = ft_check(saved, NULL);
-		return (NULL);
+	saved = ft_check(saved, NULL);
+	return (NULL);
 	}
 	if (!saved)
 	{

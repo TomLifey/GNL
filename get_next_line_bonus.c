@@ -101,11 +101,6 @@ char	*get_next_line(int fd)
 
 	if (fd < 0 || fd >= OPEN_MAX || BUFFER_SIZE <= 0)
 		return (NULL);
-	if (read(fd, NULL, 0) < 0)
-	{
-		saved[fd] = ft_check(saved[fd], NULL);
-		return (NULL);
-	}
 	if (!saved[fd])
 		saved[fd] = ft_calloc(1, sizeof(char));
 	if (!saved[fd])
